@@ -1,0 +1,12 @@
+MOD TEMPLATE Changelog
+https://github.com/thenamesnano/MinecraftModTemplate
+
+1.0
+====
+ - 1.0.0 This is the first changelog
+
+Pre
+====
+ - 0.1.0 FirstLine:
+           Second Line
+           Third Line

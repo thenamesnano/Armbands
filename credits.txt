@@ -1,0 +1,3 @@
+MOD TEMPLATE: Credits & Thanks
+
+thenamesnano - Initial implementation
