@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/thenamesnano/Armbands/blob/main/src/forge-1.16.5/resources/icon.png"/>
+  <img src="https://github.com/thenamesnano/Armbands/blob/forge-1.16.5/src/main/resources/icon.png"/>
 </p>
 <h1 align="center">Armbands</h1>
 <h4 align="center">~May reduce friendly fire~</h4>
