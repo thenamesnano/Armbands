@@ -1,20 +1,21 @@
 <p align="center">
-  <img src="https://github.com/thenamesnano/MinecraftModTemplate/blob/main/src/main/resources/icon.png"/>
+  <img src="https://github.com/thenamesnano/Armbands/blob/main/src/main/resources/icon.png"/>
 </p>
-<h1 align="center">MOD TEMPLATE</h1>
-<h4 align="center">~Saving myself time with a template~</h4>
+<h1 align="center">Armbands</h1>
+<h4 align="center">~May reduce friendly fire~</h4>
 <div></div>
 
-<h3>About MOD TEMPLATE</h3>
-<p>This is a mod template for me to use when starting a new project.  It prevents me from opening up a lot of files and comparing them in a text editor.</p>
-<p>Make sure to check the build.gradle and update all instances of modname.  Mappings need to be updated as well.</p>
+<h3>About Armbands</h3>
+<p>Armbands is a mod inspired by features present in DayZ Standalone.  In that game players (who don't have names of their heads) 
+can equip colored armbands to help them identify teammates and prevent friendly fire.  I thought this was a good idea for a 
+modpack I was working on in the past called Wicked World, a modpack that had player nameplates were removed.  While I didn't 
+finish the mod back then I still think the concept has potential.  That has led us to here.</p>
 
 <h3>List of Features</h3>
 <ul>
-<li>Literally</li>
-<li>Nothing</li>
-<li>At</li>
-<li>All</li>
+<li>Armbands that can be worn in the chest slot.</li>
+<li>The ability to dye armbands.</li>
+<li>Curios support.</li>
 </ul>
 
 <h3>To Modpack Developers</h3>

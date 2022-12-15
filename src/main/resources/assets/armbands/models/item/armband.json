@@ -1,6 +1,7 @@
 {
-   "parent": "item/generated",
-   "textures": {
-       "layer0": "armbands:items/armband_white"
-   }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "armbands:items/armband_white",
+    "_comment": "armbands:items/armband_red"
+  }
 }

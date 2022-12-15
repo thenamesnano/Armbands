@@ -1,6 +1,6 @@
 {
   "config.armbands.modEnabled": "Mod Enabled",
-  "itemGroup.armbands": "Armbands",
+  "itemGroup.armbands_items": "Armbands",
   "item.armbands.armband": "Armband",
   "item.armbands.armband.white": "Armband",
   "item.armbands.armband.orange": "Armband",
@@ -16,6 +16,5 @@
   "item.armbands.armband.blue": "Armband",
   "item.armbands.armband.brown": "Armband",
   "item.armbands.armband.green": "Armband",
-  "item.armbands.armband.red": "Armband",
-  "item.armbands.armband": "Armband"
+  "item.armbands.armband.red": "Armband"
 }
