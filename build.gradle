@@ -1,17 +1,25 @@
-plugins {
-    id 'eclipse'
-    id 'maven-publish'
-    id 'net.minecraftforge.gradle' version '5.1.+'
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+    }
 }
+apply plugin: 'net.minecraftforge.gradle'
+// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
 
 String semver = "${version_major}.${version_minor}.${version_patch}"
 
 version = "${semver}"
-group = 'com.nanosplace.modname' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'modname'
+group = 'com.nanosplace.armbands' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = 'armbands'
 
-// Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+// Mojang ships Java 8 to end users in 1.16, so your mod should target Java 8.
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
@@ -65,7 +73,7 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: 'x.x.x'
+    mappings channel: 'official', version: '1.16.5'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
 
@@ -76,9 +84,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'modname'
+            property 'forge.enabledGameTestNamespaces', 'armbands'
             mods {
-                modname {
+                armbands {
                     source sourceSets.main
                 }
             }
@@ -88,9 +96,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'modname'
+            property 'forge.enabledGameTestNamespaces', 'armbands'
             mods {
-                modname {
+                armbands {
                     source sourceSets.main
                 }
             }
@@ -100,9 +108,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            property 'forge.enabledGameTestNamespaces', 'modname'
+            property 'forge.enabledGameTestNamespaces', 'armbands'
             mods {
-                modname {
+                armbands {
                     source sourceSets.main
                 }
             }
@@ -112,9 +120,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'modname', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'armbands', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
             mods {
-                modname {
+                armbands {
                     source sourceSets.main
                 }
             }
@@ -125,7 +133,7 @@ minecraft {
 // Example for how to get properties into the manifest for reading at runtime.
 jar {
     manifest.attributes([
-                "Specification-Title"     : "modname",
+                "Specification-Title"     : "armbands",
                 "Specification-Vendor"    : "thenamesnano",
                 "Specification-Version"   : "${semver}", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,

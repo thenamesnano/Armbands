@@ -1,5 +1,5 @@
-MOD TEMPLATE Changelog
-https://github.com/thenamesnano/MinecraftModTemplate
+Armbands Changelog
+https://github.com/thenamesnano/Armbands
 
 1.0
 ====
